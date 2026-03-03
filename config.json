@@ -1,0 +1,1 @@
+{\n  "apiEndpoints": {\n    "userService": "https://api.example.com/v1/users",\n    "orderService": "https://api.example.com/v1/orders"\n  },\n  "timeouts": {\n    "requestTimeout": 30,\n    "connectionTimeout": 15\n  },\n  "featureFlags": {\n    "newUI": true,\n    "experimentalFeature": false\n  }\n}
