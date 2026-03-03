@@ -1,52 +1,69 @@
 .navbar {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+    align-items: center;
     background-color: #333;
+    padding: 1rem;
 }
 
 .navbar a {
     color: white;
-    padding: 14px 20px;
     text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.navbar a:hover {
+    background-color: #555;
+}
+
+.header {
+    background: url('barber-shop-header.jpg') no-repeat center center/cover;
+    height: 50vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
     text-align: center;
 }
 
-.services-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    gap: 20px;
+.section {
+    padding: 2rem;
 }
 
-.gallery {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-}
-
-.gallery img {
+.footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 1rem;
+    position: relative;
+    bottom: 0;
     width: 100%;
-    max-width: 290px;
-    margin: 10px;
 }
 
-.contact-form {
+.form {
     display: flex;
     flex-direction: column;
 }
 
-.contact-form input,
-.contact-form textarea {
-    margin: 10px 0;
-    padding: 10px;
+.form input, .form textarea {
+    margin: 0.5rem 0;
+    padding: 0.5rem;
     border: 1px solid #ccc;
-    border-radius: 5px;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+.gallery img {
+    width: 100%;
+    border-radius: 8px;
 }
 
 @media (max-width: 600px) {
     .navbar {
         flex-direction: column;
-    }
-    .gallery img {
-        max-width: 100%;
     }
 }
