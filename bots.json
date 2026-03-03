@@ -1,0 +1,60 @@
+{
+  "bots": [
+    {
+      "id": "openai-gpt",
+      "name": "OpenAI GPT",
+      "description": "Modelo de lenguaje avanzado por OpenAI",
+      "type": "LLM",
+      "apiEndpoint": "https://api.openai.com/v1/chat/completions",
+      "authentication": "Bearer Token",
+      "public": true,
+      "features": ["text-generation", "conversation", "code-analysis"]
+    },
+    {
+      "id": "google-gemini",
+      "name": "Google Gemini",
+      "description": "Modelo de IA multimodal por Google",
+      "type": "LLM",
+      "apiEndpoint": "https://generativelanguage.googleapis.com/v1beta/models",
+      "authentication": "API Key",
+      "public": true,
+      "features": ["text-generation", "image-analysis", "conversation"]
+    },
+    {
+      "id": "anthropic-claude",
+      "name": "Anthropic Claude",
+      "description": "Modelo de IA seguro y controlable",
+      "type": "LLM",
+      "apiEndpoint": "https://api.anthropic.com/v1/messages",
+      "authentication": "Bearer Token",
+      "public": true,
+      "features": ["text-generation", "analysis", "reasoning"]
+    },
+    {
+      "id": "huggingface",
+      "name": "Hugging Face",
+      "description": "Plataforma abierta de modelos de IA",
+      "type": "ML-Platform",
+      "apiEndpoint": "https://api-inference.huggingface.co/models",
+      "authentication": "API Key",
+      "public": true,
+      "features": ["nlp", "computer-vision", "audio"]
+    },
+    {
+      "id": "cohere",
+      "name": "Cohere",
+      "description": "API de generación de lenguaje natural",
+      "type": "LLM",
+      "apiEndpoint": "https://api.cohere.ai/v1",
+      "authentication": "API Key",
+      "public": true,
+      "features": ["text-generation", "embeddings", "classification"]
+    }
+  ],
+  "configuration": {
+    "timeout": 30000,
+    "retries": 3,
+    "cache": true,
+    "logLevel": "info"
+  }
+}
